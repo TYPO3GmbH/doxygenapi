@@ -2566,3 +2566,5 @@ OUTPUT_DIRECTORY       = /mnt/output
 # Note: If this tag is empty the current directory is searched.
 
 INPUT                  = /mnt/doxygen
+EXCLUDE_PATTERNS      += */sysext/*.md
+USE_MDFILE_AS_MAINPAGE = /mnt/doxygen/README.md
