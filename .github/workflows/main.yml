@@ -30,5 +30,5 @@ jobs:
           username: TYPO3IncTeam
           password: ${{ secrets.CR_PAT}}
           registry: ghcr.io
-          secrets: |
-            GIT_AUTH_TOKEN=${{ secrets.CR_PAT }}
+          push: true
+          tags: t3g/doxygen:latest
