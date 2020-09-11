@@ -31,4 +31,4 @@ jobs:
           password: ${{ secrets.CR_PAT}}
           registry: ghcr.io
           push: true
-          tags: t3g/doxygen:latest
+          tags: latest
