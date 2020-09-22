@@ -12,6 +12,10 @@
         <!--BEGIN !PROJECT_NAME-->
         <title>$title</title>
         <!--END !PROJECT_NAME-->
+        <!-- UNIVERSE BAR START -->
+        <script src="https://typo3.azureedge.net/typo3infrastructure/universe/dist/webcomponents-loader.js"></script>
+        <script src="https://typo3.azureedge.net/typo3infrastructure/universe/dist/typo3-universe.js" type="module"></script>
+        <!-- UNIVERSE BAR END -->
         <script type="text/javascript" src="$relpath^jquery.js"></script>
         <script type="text/javascript" src="$relpath^dynsections.js"></script>
         $treeview $search $mathjax
@@ -19,6 +23,11 @@
         $extrastylesheet
     </head>
     <body>
+        <!-- UNIVERSE BAR START -->
+        <typo3-universe active="documentation">
+            <div style="display: block; height: 44px; background-color: #313131;"></div>
+        </typo3-universe>
+        <!-- UNIVERSE BAR END -->
         <div id="top">
             <!-- do not remove this div, it is closed by doxygen! -->
 
